@@ -17,18 +17,17 @@
 <body class="am-big-background">
 
     <!-- main window -->
-    <section class="container am-main-window">
+    <section class="container am-main-window p-0">
 
         <!-- big container -->
-        <div class="row h-100 w-100 p-0">
-
+        <div class="row h-100 w-100 ">
 
             <!-- left box with account and chats -->
             <div class="col-4 am-left-part p-0">
 
                 <!-- account box -->
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="am-account-box d-flex align-items-center">
+                <div class="am-account-box d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
                         <div class="am-myavatar-box ms-2">
                             <img class="img-fluid" src="/img/avatar_io.jpg" alt="my avatar">
                         </div>
@@ -36,13 +35,11 @@
                     </div>
 
                     <div>
-                        <i class="am-account-icons bi bi-arrow-clockwise"></i>
+                        <i class="am-account-icons bi bi-arrow-clockwise "></i>
                         <i class="am-account-icons bi bi-chat-left-fill"></i>
                         <i class="am-account-icons bi bi-three-dots-vertical"></i>
                     </div>
-
                 </div>
-
 
                 <!-- notifications box -->
                 <div class="am-notifications-box d-flex align-items-center">
@@ -57,8 +54,8 @@
 
                 <!-- search box -->
                 <div class="am-search-box d-flex align-items-center">
-                    <i class="bi bi-search m-4"></i>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <i class="am-search-icon bi bi-search m-4"></i>
+                    <input type="text" placeholder=" Cerca o inizia una nuova chat">
                 </div>
 
                 <!--chat list -->
@@ -78,7 +75,36 @@
 
 
             <!-- right box with current chat -->
-            <div class="col-8 am-current-chat">
+
+            <!-- current chatter -->
+            <div class="col-8 am-current-chat d-flex flex-column justify-content-between p-0">
+
+                <div class="am-account-box d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="am-myavatar-box ms-2">
+                            <img class="img-fluid" src="/img/avatar_1.jpg" alt="my avatar">
+                        </div>
+                        <div>
+                            <div class="ms-2">Michele</div>
+                            <div class="ms-2 text-secondary">Ultimo accesso oggi alle 12:00 </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="am-chatter-icon bi bi-search "></i>
+                        <i class="am-chatter-icon bi bi-paperclip"></i>
+                        <i class="am-chatter-icon bi bi-three-dots-vertical"></i>
+                    </div>
+                </div>
+
+                <!-- write a message box -->
+                <div class="am-writeamessage-box d-flex align-items-center justify-content-evenly">
+                    <i class="am-message-icon bi bi-emoji-sunglasses"></i>
+                    <input type="text" placeholder=" Scrivi un messaggio">
+                    <i class="am-message-icon bi bi-mic-fill"></i>
+                </div>
+
+
 
 
             </div>

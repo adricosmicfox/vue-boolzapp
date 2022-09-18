@@ -42,6 +42,7 @@
 .am-account-icons {
     font-size: 1.3rem;
     color: #B1B1B1;
+    margin-right: 0.6rem;
 }
 
 
@@ -76,11 +77,11 @@
 }
 
 .am-search-box input {
-    width: 22rem;
+    width: 18rem;
     border: solid 1px lightgray;
 }
 
-.bi-search {
+.am-search-icon {
     color: darkgray;
 
 }
@@ -103,21 +104,34 @@
     margin-left: 1rem;
 }
 
-.bi-bell-slash-fill {
-    font-size: 1.5rem;
-    color: #8EDAFC;
-
-}
-
-
-
-
-
-
-
 
 /* RIGHT PART WITH CURRENT CHAT */
 .am-current-chat {
-    background-color: cadetblue;
+    background-image: url(../img/mine.jpg);
     height: 100%;
+}
+
+/* current chatter */
+.am-chatter-icon {
+    font-size: 1.5rem;
+    margin-right: 0.6rem;
+    color: #B1B1B1;
+}
+
+/* write a message box */
+.am-writeamessage-box {
+    height: 4rem;
+    background-color: #F3EEEA;
+}
+
+.am-writeamessage-box input {
+    width: 40rem;
+    border: solid 1px lightgray;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+.am-message-icon {
+    color: #6B7376;
+    font-size: 1.5rem;
 }
