@@ -4,8 +4,120 @@
     box-sizing: border-box;
 }
 
-.am-green-upper {
-    background-color: #009688;
-    height: 100vh;
-    width: 100%;
+
+.am-big-background {
+    background-color: aquamarine;
+}
+
+
+/* BIG BACKGROUND */
+.am-main-window {
+    background-color: aliceblue;
+    height: 60rem;
+    margin-top: 10rem;
+}
+
+
+/* LEFT PART WITH ACCOUNT AND CHAT LIST */
+
+/* account box */
+.am-account-box {
+    background-color: #EAEAEA;
+    height: 4rem;
+}
+
+.am-myavatar-box {
+    border-radius: 50px;
+    overflow: hidden;
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.am-left-part {
+    background-color: white;
+    height: 100%;
+}
+
+.am-account-icons {
+    font-size: 1.3rem;
+    color: #B1B1B1;
+}
+
+
+/* notification box */
+.am-notifications-box {
+    background-color: #8EDAFC;
+    height: 4.5rem;
+
+}
+
+.am-notifications-bubble {
+    background-color: #F2FBFF;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.bi-bell-slash-fill {
+    font-size: 1.5rem;
+    color: #8EDAFC;
+
+}
+
+/* search box */
+.am-search-box {
+    background-color: #FAFAFA;
+    height: 3rem;
+
+}
+
+.am-search-box input {
+    width: 22rem;
+    border: solid 1px lightgray;
+}
+
+.bi-search {
+    color: darkgray;
+
+}
+
+
+/* chat list */
+.am-chat-box {
+    background-color: #E9EBEB;
+    height: 5rem;
+
+}
+
+.am-chat-bubble {
+    background-color: #F2FBFF;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.bi-bell-slash-fill {
+    font-size: 1.5rem;
+    color: #8EDAFC;
+
+}
+
+
+
+
+
+
+
+
+/* RIGHT PART WITH CURRENT CHAT */
+.am-current-chat {
+    background-color: cadetblue;
+    height: 100%;
 }

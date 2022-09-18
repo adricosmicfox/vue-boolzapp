@@ -14,22 +14,81 @@
     <title>BoolzApp</title>
 </head>
 
-<body>
-    <!-- background green upper part -->
-    <section class="am-green-upper">
+<body class="am-big-background">
 
-       
-      
+    <!-- main window -->
+    <section class="container am-main-window">
 
-
-
+        <!-- big container -->
+        <div class="row h-100 w-100 p-0">
 
 
+            <!-- left box with account and chats -->
+            <div class="col-4 am-left-part p-0">
+
+                <!-- account box -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="am-account-box d-flex align-items-center">
+                        <div class="am-myavatar-box ms-2">
+                            <img class="img-fluid" src="/img/avatar_io.jpg" alt="my avatar">
+                        </div>
+                        <div class="ms-2">Sofia</div>
+                    </div>
+
+                    <div>
+                        <i class="am-account-icons bi bi-arrow-clockwise"></i>
+                        <i class="am-account-icons bi bi-chat-left-fill"></i>
+                        <i class="am-account-icons bi bi-three-dots-vertical"></i>
+                    </div>
+
+                </div>
 
 
-       
+                <!-- notifications box -->
+                <div class="am-notifications-box d-flex align-items-center">
+                    <div class="am-notifications-bubble">
+                        <i class="bi bi-bell-slash-fill"></i>
+                    </div>
+                    <div>
+                        <div class="ms-2">Ricevi notifiche di nuovi messaggi</div>
+                        <div class="text-secondary ms-2"><u>Attiva notifiche desktop</u></div>
+                    </div>
+                </div>
+
+                <!-- search box -->
+                <div class="am-search-box d-flex align-items-center">
+                    <i class="bi bi-search m-4"></i>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
+
+                <!--chat list -->
+                <div class="am-chat-box d-flex align-items-center">
+                    <div class="am-chat-bubble">
+                        <img class="img-fluid" src="/img/avatar_1.jpg" alt="my avatar">
+                    </div>
+                    <div>
+                        <div class="ms-2">Michele</div>
+                        <div class="text-secondary ms-2">Ultimo messaggio inviato</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!-- right box with current chat -->
+            <div class="col-8 am-current-chat">
+
+
+            </div>
+
+
+
+        </div>
     </section>
-  
+
+
 </body>
 
 </html>
