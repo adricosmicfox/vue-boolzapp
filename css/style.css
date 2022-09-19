@@ -6,7 +6,7 @@
 
 
 .am-big-background {
-    background-color: aquamarine;
+    background-color: #009688;
 }
 
 
@@ -136,8 +136,8 @@
     border-radius: 15px;
 }
 
-.am-bubble-sent{
-    background-color: #D5F9BA;
+.am-bubble-sent {
+    align-items: end;
 }
 
 

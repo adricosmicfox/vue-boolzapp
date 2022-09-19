@@ -82,7 +82,7 @@
                 <!-- right box with current chat -->
 
                 <!-- current chatter -->
-                <div class="col-8 am-current-chat d-flex flex-column justify-content-between p-0">
+                <div class="col-8 am-current-chat d-flex flex-column  p-0">
 
                     <div class="am-chatter-box d-flex justify-content-between align-items-center">
 
@@ -111,13 +111,12 @@
                     </div>
 
                     <!-- chat bubbles -->
-                    <div class="am-bubble-chat container " v-for="(element, i) in chatters[activeChatter].messages"
+                    <div class="d-flex flex-column" v-for="(element, i) in chatters[activeChatter].messages"
                         :class="{'am-bubble-sent' : (element.status==='sent')}">
-                        {{element.message}}
+                        <div class="am-bubble-chat container m-2">
+                            {{element.message}}
+                        </div>
                     </div>
-
-
-
 
                     <!-- write a message box -->
                     <div class="am-writeamessage-box d-flex align-items-center justify-content-evenly">
@@ -126,12 +125,7 @@
                         <i class="am-message-icon bi bi-mic-fill"></i>
                     </div>
 
-
-
-
                 </div>
-
-
 
             </div>
         </section>
