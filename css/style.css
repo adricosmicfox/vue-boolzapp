@@ -112,6 +112,12 @@
 }
 
 /* current chatter */
+.am-chatter-box {
+    background-color: #EAEAEA;
+    height: 4rem;
+    border-left: solid 1px lightgray;
+}
+
 .am-chatter-icon {
     font-size: 1.5rem;
     margin-right: 0.6rem;
