@@ -33,7 +33,7 @@
                             <div class="am-myavatar-box ms-2">
                                 <img class="img-fluid" src="/img/avatar_io.jpg" alt="my avatar">
                             </div>
-                            <div class="ms-2">Sofia</div>
+                            <div class="ms-2 am-chatter-name">Sofia</div>
                         </div>
 
                         <div>
@@ -61,7 +61,8 @@
                     </div>
 
                     <!--chat list -->
-                    <div class="am-chat-box d-flex align-items-center" v-for="(element, i) in chatters">
+                    <div @click="openChat(i)" class="am-chat-box d-flex align-items-center"
+                        v-for="(element, i) in chatters">
                         <div class="am-chat-bubble">
 
                             <img class="img-fluid" :src="element.profilePic" alt="my avatar">
@@ -69,7 +70,7 @@
                         </div>
                         <div>
 
-                            <div class="ms-2">{{element.name}}</div>
+                            <div class="ms-2 am-chatter-name">{{element.name}}</div>
 
                             <div class="text-secondary ms-2"> {{element.lastMessage}}</div>
 
@@ -84,13 +85,21 @@
                 <div class="col-8 am-current-chat d-flex flex-column justify-content-between p-0">
 
                     <div class="am-chatter-box d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
+
+                        <div v-for="(element,i) in chatters" v-if="showCurrentChatter(i)"
+                            class="d-flex align-items-center">
+
                             <div class="am-myavatar-box ms-2">
-                                <img class="img-fluid" src="/img/avatar_1.jpg" alt="my avatar">
+
+                                <img class="img-fluid" :src="element.profilePic" alt="my avatar">
+
                             </div>
                             <div>
-                                <div class="ms-2">Michele</div>
+
+                                <div class="ms-2 am-chatter-name">{{element.name}}</div>
+
                                 <div class="ms-2 text-secondary">Ultimo accesso oggi alle 12:00 </div>
+
                             </div>
                         </div>
 
@@ -100,6 +109,11 @@
                             <i class="am-chatter-icon bi bi-three-dots-vertical"></i>
                         </div>
                     </div>
+
+                    <div v-for="(element, i) in chatters[activeChatter].messages">{{element.message}}
+                    </div>
+
+
 
                     <!-- write a message box -->
                     <div class="am-writeamessage-box d-flex align-items-center justify-content-evenly">

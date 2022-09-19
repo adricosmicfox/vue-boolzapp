@@ -89,9 +89,8 @@
 
 /* chat list */
 .am-chat-box {
-    background-color: #E9EBEB;
+    border-top: solid 1px rgb(239, 237, 237);
     height: 5rem;
-
 }
 
 .am-chat-bubble {
@@ -104,6 +103,9 @@
     margin-left: 1rem;
 }
 
+.am-chatter-name {
+    font-weight: 600;
+}
 
 /* RIGHT PART WITH CURRENT CHAT */
 .am-current-chat {
@@ -116,6 +118,7 @@
     background-color: #EAEAEA;
     height: 4rem;
     border-left: solid 1px lightgray;
+    width: 100%;
 }
 
 .am-chatter-icon {
