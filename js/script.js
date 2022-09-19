@@ -192,7 +192,9 @@ const app = new Vue({
 
         showCurrentChatter(i) {
             return this.activeChatter === i;
-        }
+        },
+
+
     }
 
 

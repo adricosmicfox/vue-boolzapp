@@ -127,6 +127,7 @@
     color: #B1B1B1;
 }
 
+/* chat bubbles */
 .am-bubble-chat {
     padding: 1rem;
     padding-right: 5rem !important;
@@ -134,6 +135,11 @@
     width: 20rem !important;
     border-radius: 15px;
 }
+
+.am-bubble-sent{
+    background-color: #D5F9BA;
+}
+
 
 /* write a message box */
 .am-writeamessage-box {

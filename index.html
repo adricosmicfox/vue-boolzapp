@@ -110,10 +110,12 @@
                         </div>
                     </div>
 
-                    <!-- bubble chat -->
-                    <div class="am-bubble-chat container" v-for="(element, i) in chatters[activeChatter].messages">
+                    <!-- chat bubbles -->
+                    <div class="am-bubble-chat container " v-for="(element, i) in chatters[activeChatter].messages"
+                        :class="{'am-bubble-sent' : (element.status==='sent')}">
                         {{element.message}}
                     </div>
+
 
 
 
