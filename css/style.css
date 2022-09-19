@@ -93,7 +93,7 @@
     height: 5rem;
 }
 
-.am-chat-bubble {
+.am-chat-avatar {
     background-color: #F2FBFF;
     border-radius: 50px;
     overflow: hidden;
@@ -125,6 +125,14 @@
     font-size: 1.5rem;
     margin-right: 0.6rem;
     color: #B1B1B1;
+}
+
+.am-bubble-chat {
+    padding: 1rem;
+    padding-right: 5rem !important;
+    background-color: white;
+    width: 20rem !important;
+    border-radius: 15px;
 }
 
 /* write a message box */

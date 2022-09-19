@@ -63,7 +63,7 @@
                     <!--chat list -->
                     <div @click="openChat(i)" class="am-chat-box d-flex align-items-center"
                         v-for="(element, i) in chatters">
-                        <div class="am-chat-bubble">
+                        <div class="am-chat-avatar">
 
                             <img class="img-fluid" :src="element.profilePic" alt="my avatar">
 
@@ -110,7 +110,9 @@
                         </div>
                     </div>
 
-                    <div v-for="(element, i) in chatters[activeChatter].messages">{{element.message}}
+                    <!-- bubble chat -->
+                    <div class="am-bubble-chat container" v-for="(element, i) in chatters[activeChatter].messages">
+                        {{element.message}}
                     </div>
 
 
